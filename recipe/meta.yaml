@@ -1,5 +1,5 @@
 {% set name = "dtool_annotation" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/dtool-annotation/dtool-annotation-{{ version }}.tar.gz
-  sha256: bb00ad1e7a8c83001c3be8cdd863a563d09d0b940cc30a5a0d5eb9d0ee278fe0
+  sha256: 6533c4572534f31bd9ea371e898cd88e79db946f86c1c017268187ee79c8ff33
 
 build:
   number: 0
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.rst
-  summary: 'Add ability to annotate datasets using the dtool CLI'
+  summary: Add ability to annotate datasets using the dtool CLI
   description: |
     dtool CLI commands for working with per dataset metadata (annotations)
   doc_url: https://github.com/jic-dtool/dtool-annotation
