@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: dtool_annotation
-  version: "0.1.1"
+  version: "0.2.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/dtool-annotation/dtool-annotation-${{ version }}.tar.gz
-  sha256: 6533c4572534f31bd9ea371e898cd88e79db946f86c1c017268187ee79c8ff33
+  url: https://pypi.org/packages/source/${{ name[0] }}/dtool-annotation/${{ name }}-${{ version }}.tar.gz
+  sha256: 8f064bd426a774fdeaad504dfdced08b4e81bc01eac0dcfbff94d0ac9e852057
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
